@@ -13,40 +13,47 @@
  - Загрузка докумментации
  - Сбор данных о статусах PEP
 
-Примененные библиотеки:
- - appdirs 1.4.4
- - attrs 21.4.0
- - beautifulsoup4 4.11.1
- - bs4 0.0.1
- - cattrs 22.1.0
- - certifi 2022.6.15
- - charset-normalizer 2.1.1
- - colorama 0.4.5
- - exceptiongroup 1.0.0rc8
- - idna 3.3
- - lxml 4.9.1
- - requests 2.28.1
- - requests-cache 0.9.5
- - six 1.16.0
- - soupsieve 2.3.2.post1
- - tqdm 4.64.0
- - url-normalize 1.4.3
- - urllib3 1.26.11
- - prettytable 2.1.0
+Примененные технологии:
+ - Python 3
+ - bs4
+ - Git
+ - Pytest
 
-### Клонировать репозиторий c GitHub:
+### Клонирование репозитория и переход в него в командной строке:
 
 ```bash
 git clone git@github.com:Eugenii1996/bs4_parser_pep.git
 ```
 
-После клонирования необходимо установить и активировать виртуальное окружение находясь в директории bs4_parser_pep:
+```bash
+cd bs4_parser_pep
+```
+
+### Cоздать и активировать виртуальное окружение:
+
+Виртуальное окружение должно использовать Python 3.7
 
 ```bash
 pyhton -m venv venv
 ```
 
-Далее нужно обновить менеджер пакетов pip и установить зависимости:
+* Если у вас Linux/MacOS
+
+    ```bash
+    source venv/bin/activate
+    ```
+
+* Если у вас windows
+
+    ```bash
+    source venv/scripts/activate
+    ```
+
+### Установка зависимостей из файла requirements.txt:
+
+```bash
+python -m pip install --upgrade pip
+```
 
 ```bash
 pip install -r requirements.txt
@@ -54,7 +61,7 @@ pip install -r requirements.txt
 
 ### Запуск проекта:
 
-Чтобы запустить проект, из директории с проектом нужно выполнить команду:
+Из корневой деректории проекта bs4_parser_pep выполнить команды:
 
 ```bash
 python main.py {mode} {output}
